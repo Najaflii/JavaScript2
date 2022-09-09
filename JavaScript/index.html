@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farid</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<button onclick="myFunction()">Click</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text = "Press OK or Cancel";
+  if (confirm(text) == true) {
+    text = "Ok";
+  } else {
+    text = "Exit";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+<div>
+  <button onclick="Input()" id="btn">
+    Enter your age
+  </button>
+</div>
+
+<input id="inp" type="text" placeholder="Enter group number">
+  <button onclick="Show()">Enter Group</button>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
